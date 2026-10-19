@@ -4,7 +4,7 @@ The public support and privacy pages for [Spinola](https://github.com/nsgnoah/sp
 
 ## Pages
 
-- `index.html` — support page. What the game is, how to get help (email), common questions (accounts, wrong answers, starting over, deleting online matches, online play on Android), and a link to the privacy policy.
+- `index.html` — support page. What the game is, how to get help (email, with pre-filled "Email support" and "Report a wrong answer" templates), common questions (accounts, wrong answers, starting over, deleting online matches, online play on Android), and a link to the privacy policy.
 - `privacy.html` — privacy policy. Spinola has no accounts, servers, analytics, or third-party SDKs. The policy spells out what stays on the device, exactly what a Game Center turn-based match contains and who can see it, how match deletion works on each side, and that the Android app makes no network requests at all.
 
 Both pages are plain static HTML with inline CSS, no JavaScript, no build step, and a dark-mode variant via `prefers-color-scheme`.
