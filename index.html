@@ -24,6 +24,10 @@
   a { color:var(--violet); }
   ul { padding-left:22px; }
   li { margin:7px 0; }
+  .actions { display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 6px; }
+  .button { display:inline-block; padding:10px 18px; border-radius:14px; background:var(--violet); color:var(--paper); font-weight:700; text-decoration:none; }
+  .button:hover, .button:focus-visible { filter:brightness(1.1); text-decoration:underline; }
+  .hint { color:var(--ink2); font-size:14px; margin:0; }
   footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); color:var(--ink2); font-size:14px; }
   @media (prefers-color-scheme: dark) {
     :root { --ink:#F2EFE6; --ink2:#A9A4BC; --paper:#17162B; --line:#3A3550; --violet:#B6A6FF; }
@@ -48,12 +52,18 @@
   <h2>Getting help</h2>
   <p>Email <a href="mailto:noah@nsgsolutions.co">noah@nsgsolutions.co</a>. Useful things to include:
   what you were doing, which mode you were in, and your phone or tablet model.</p>
+  <p class="actions">
+    <a class="button" href="mailto:noah@nsgsolutions.co?subject=Spinola%20support&amp;body=What%20I%20was%20doing%3A%0D%0A%0D%0AWhat%20happened%3A%0D%0A%0D%0AMode%20(pass-and-play%20or%20two%20phones%3B%20me%20vs%20my%20partner%20or%20couple%20vs%20couple)%3A%0D%0A%0D%0APhone%20or%20tablet%20model%3A%0D%0A">Email support</a>
+    <a class="button" id="report-wrong-answer" href="mailto:noah@nsgsolutions.co?subject=Spinola%3A%20wrong%20answer&amp;body=Question%20text%3A%0D%0A%0D%0AAnswer%20Spinola%20gave%3A%0D%0A%0D%0ACorrect%20answer%3A%0D%0A%0D%0ASource%20(a%20link%20if%20you%20have%20one)%3A%0D%0A">Report a wrong answer</a>
+  </p>
+  <p class="hint">Both buttons open your email app with a short template to fill in.</p>
 
   <h2>Common questions</h2>
   <ul>
     <li><strong>Do I need an account?</strong> No. Spinola has no accounts and no passwords. Playing from
     two phones (iPhone and iPad only) uses the Apple ID already signed in to Game Center on your device.</li>
-    <li><strong>A question has the wrong answer.</strong> Please tell us, with the question text.
+    <li><strong>A question has the wrong answer.</strong> Please
+    <a href="#report-wrong-answer">tell us</a>, with the question text.
     Every question is meant to be a checkable public fact, and we will correct it.</li>
     <li><strong>How do I start over?</strong> The menu on the home screen has &ldquo;Start
     over&rdquo;, which clears your profile and pass-and-play matches on that device.</li>
